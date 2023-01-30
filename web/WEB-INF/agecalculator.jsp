@@ -20,8 +20,8 @@
             <input type="submit" value="age next birthday">
         </form>
         
-        
-        <p>${displayAnswer}</p>
+          
+        <p>${answer}</p>
         <a href="arithmetic">Arithmetic Calculator</a>
     </body>
 </html>

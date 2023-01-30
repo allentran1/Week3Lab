@@ -29,7 +29,7 @@ public class AgeCalculatorServlet extends HttpServlet {
             String age = request.getParameter("age");
             
             if(age == null || age.equals("")) {
-                request.setAttribute("displayAnswer", "You must give your current age.");
+                request.setAttribute("answer", "You must give your current age.");
                 
                 return;
             }
@@ -41,10 +41,10 @@ public class AgeCalculatorServlet extends HttpServlet {
                 
                 ageUp = ageUp + 1;
                 
-                request.setAttribute("displayAnswer", "Your age next birthday will be " + ageUp);
+                request.setAttribute("answer", "Your age next birthday will be " + ageUp);
                 
                 getServletContext().getRequestDispatcher("/WEB-INF/agecalculator.jsp").forward(request, response);
-                
+                    
                 return;
             }
             
@@ -52,7 +52,7 @@ public class AgeCalculatorServlet extends HttpServlet {
 
             }
             
-            request.setAttribute("displayAnswer", "You must give your current age.");
+            request.setAttribute("answer", "You must give your current age.");
             
             getServletContext().getRequestDispatcher("/WEB-INF/agecalculator.jsp").forward(request, response);
     }
