@@ -18,12 +18,12 @@
             <br>
             Second: <input type="text" name="second">
             <br>
-            <input type="submit" value="+" name="addition">
-            <input type="submit" value="-" name="minus">
-            <input type="submit" value="*" name="multiply">
-            <input type="submit" value="%" name="divide">
+            <input type="submit" value="+" name="operator">
+            <input type="submit" value="-" name="operator">
+            <input type="submit" value="*" name="operator">
+            <input type="submit" value="%" name="operator">
         </form>
-        
+        <p>${answer}</p>
         <a href="age">Age Calculator</a>
     </body>
 </html>

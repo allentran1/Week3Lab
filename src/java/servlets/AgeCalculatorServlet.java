@@ -44,8 +44,10 @@ public class AgeCalculatorServlet extends HttpServlet {
                 request.setAttribute("displayAnswer", "Your age next birthday will be " + ageUp);
                 
                 getServletContext().getRequestDispatcher("/WEB-INF/agecalculator.jsp").forward(request, response);
+                
                 return;
             }
+            
             catch (Exception e) {
 
             }
